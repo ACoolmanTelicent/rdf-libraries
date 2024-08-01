@@ -28,7 +28,8 @@
     "test": "jest test",
     "build": "rm -rf ./dist && vite build",
     "lint": "eslint **/*.ts",
-    "serve": "node --experimental-specifier-resolution=node --loader ts-node/esm ./server.mts"
+    "serve": "node --experimental-specifier-resolution=node --loader ts-node/esm ./server.mts",
+    "docker-reset": "docker-compose down && docker network prune && docker compose up"
   },
   "author": "",
   "license": "Apache-2.0",
